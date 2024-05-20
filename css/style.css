@@ -1,0 +1,537 @@
+        /*Roots*/
+
+:root {
+    --red: red;
+    --green: rgb(61, 196, 61);
+    --yellow: orange;
+    --blue: blue;
+    --lightblue: rgb(0, 191, 255);
+}
+
+
+        /*Style global*/
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a,.contact input[type="submit"] {
+    cursor: url('data:image/x-icon;base64,AAACAAEAICAQAA8ACQDoAgAAFgAAACgAAAAgAAAAQAAAAAEABAAAAAAAAAIAAAAAAAAAAAAAEAAAAAAAAAAAAAAAnJycAP///wBXV1cAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADMAAAAAAAAAAAAAAAAAAAAxEAAAAAAAAAAAAAAAAAAAASEAAAAAAAAAAAAAARERERAiEAAAAAAAAAAAARIiIiIiIiIAAAAAAAAAABIiIiIiIiAiAAAAAAAAAAAiADIiIiIiAAAAAAAAAAAAAAASIiIyIgAAAAAAAAAAAAABIiIjIjIAAAAAAAAAAAAAEiIiIiMiAAAAAAAAAAAAASIiIiIiIgAAAAAAAAAAAAIiIAEiIiIAAAAAAAAAAAACIgESIiIgAAAAAAAAAAAAAiASIiAiIAAAAAAAAAAAAAAAIiIBIgAAAAAAAAAAAAAAACIgEiAAAAAAAAAAAAAAAAAiASIAAAAAAAAAAAAAAAAAAAIgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD////////////////////////////////////////n////w////8H///AA///AAH//gAA//wAAP/8AAH//kAD//+AA///AAP//gAD//4AA//+AAf//gAH//8AD///wB///8A////gf////P////////////////////////////w=='), auto;
+  }
+
+a:active,.contact input[type="submit"]:active {
+    cursor: url('data:image/x-icon;base64,AAACAAEAICAQAAkACQDoAgAAFgAAACgAAAAgAAAAQAAAAAEABAAAAAAAAAIAAAAAAAAAAAAAEAAAAAAAAAAAAAAAnJycAP///wBXV1cAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMwAAAAAAAAAAAAAAAAAAADEQAAAAAAAAAAAAAAAAAAABIQAAAAAAAAAAAAAAARERECIQAAAAAAAAAAAAABEiIiIiIgAAAAAAAAAAAAMRIiIiICIAAAAAAAAAAAADMSIiIiIAAAAAAAAAAAAAABIiIjIiAAAAAAAAAAAAAAEiIiMiMgAAAAAAAAAAAAASIiIiIyIAAAAAAAAAAAABIiIgEiIgAAAAAAAAAAAAAiIgASASIAAAAAAAAAAAAAIiAAABIgAAAAAAAAAAAAACIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/////////////////////////////////////////////z////4f///+D///4Af//8AD//+AAf//AAH//wAD//8AB///AAf//gAH//wAD//8AA///Bgf//w+P//+f/////////////////////////////////////////////w=='), auto;
+  }
+
+
+    /*Header*/
+
+header {
+    text-align: center;
+}
+    
+h1 {
+    color: var(--yellow);
+    height: 300px;
+    text-shadow: 3px 3px 1px var(--lightblue);
+    font-weight: bolder;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../img/header.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    font-size: 60px;
+}
+
+/*Navbar*/
+
+header nav {
+    background-color: var(--yellow);
+}
+
+header li {
+    display: inline-block;
+}
+
+header a {
+    color: var(--red);
+    font-weight: bold;
+    line-height: 50px;
+    padding: 0 20px;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.dropdown {
+    display: inline-block;
+    color: var(--red)
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 110px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    background-color: var(--yellow);
+    display: block;
+    text-align: left;
+}
+
+header a:hover, .dropdown:hover .dropbtn {
+    color: var(--yellow);
+    background-color: var(--green);
+}
+
+.dropdown-content a:hover {
+    background-color: var(--green);
+    color: var(--yellow);
+}
+
+header li:hover .dropdown-content {
+    display: block;
+}
+
+    /*Main*/
+
+main {
+    background-color: var(--lightblue);
+}
+
+/*Container*/
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+section {
+    padding: 20px;
+}
+
+.whitebackground {
+    background-color: beige;
+}
+
+.redbackground {
+    background-color: moccasin;
+}
+
+    /*Fil d'arianne*/
+
+.breadcrumb ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+.breadcrumb li:not(:last-child)::after {
+    display: inline-block;
+    margin: 0 .25rem;
+    content: ">";
+}
+
+    /*Footer*/
+
+footer {
+    background-color: var(--yellow);
+    padding: 15px;
+}
+
+footer p {
+    text-align: center;
+    color: var(--red);
+}
+
+
+        /*Page Index*/
+
+        
+    /*Main*/
+
+/*Section presentation*/
+
+.index .presentation .card-container {
+    display: inline-block;
+}
+    
+.index .presentation .text-presentation {
+    width: 60%;
+    display: inline-block;
+}
+
+.index .presentation h2 {
+    font-size: 30px;
+}
+
+.index .presentation p {
+    margin: 20px 0px;
+    font-size: 20px;
+}
+
+.index .presentation .img-presentation {
+    width: 39%;
+    display: inline-block;
+    text-align: center;
+}
+
+.index .presentation img {
+    max-width: 200px;
+    width: auto;
+    padding: 1em 0;
+}
+
+/*Section events*/
+
+.index .events .card-container {
+    display: inline-block;
+    text-align: center;
+}
+
+.index .events .card {
+    display: inline-block;
+    width: 45%;
+    margin: 30px 15px;
+}
+
+.index .events i {
+    font-size: 50px;
+}
+
+.index .events h2 {
+    margin-top: 20px;
+}
+
+.index .events p {
+    display: flex;
+    align-items: center;
+    margin: 20px 0px;
+    height: 70px;
+}
+
+.index .events .button {
+    display: block;
+    text-decoration: none;
+    background-color: var(--green);
+    color: white;
+    border: 0px;
+    line-height: 40px;
+    width: 140px;
+    margin: auto;
+}
+
+/*Section story*/
+
+.story {
+    padding: 20px 10%;
+}
+
+.index .story .card-container {
+    display: inline-block;
+}
+
+.index .story .text-story {
+    display: inline-block;
+    width: 65%;
+    text-align: justify;
+}
+
+.index .story h2 {
+    padding: 10px 0px;
+}
+
+.index .story p {
+    padding: 10px 0px;
+}
+
+.index .story .img-story {
+    display: inline-block;
+    width: 34%;
+    text-align: center;
+}
+
+.index .story img {
+    height: 150px;
+    width: auto;
+}
+
+
+        /*Page Boutique*/
+
+
+/*h2*/
+
+.boutique h2 {
+    text-align: center;
+    margin: 20px 0px;
+}
+
+    /*Cards*/
+
+.boutique .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+    padding: 20px 0px;
+}
+
+.boutique .link-card {
+    text-decoration: none;
+}
+
+.boutique .card {
+    border: 1px solid var(--green);
+    background-color: white;
+    text-align: center;
+    height: 500px;
+    width: 300px;
+}
+
+.boutique .card:hover {
+background-color: var(--lightblue);
+border: 5px solid var(--red);
+transform: scale(1.1);
+}
+
+.boutique .card:hover .text-card {
+    border-top: 1px solid var(--red);
+}
+
+.boutique .card:hover p {
+    color: var(--red);
+}
+
+.boutique .img-card {
+    max-height: 300px;
+    max-width: 230px;
+    padding: 10px 30px;
+}
+
+.boutique .text-card {
+    border-top: 1px solid var(--green);
+    padding: 20px;
+    color: black;
+}
+
+.boutique .card ul {
+    padding: 15px;
+    text-align: left;
+}
+
+.boutique .card p {
+    color: var(--green);
+    font-weight: bolder;
+}
+
+    /*Liens Pages*/
+
+.boutique .link-page {
+    text-align: center;
+}
+
+.boutique .link-page a {
+    border-left: 1px solid black;
+    padding: 0em 0.25em;
+}
+
+
+        /*Page Contact*/
+
+
+.contact h2 {
+    text-align: center;
+    margin: 20px 0px 30px;
+}
+
+.contact iframe {
+    height: 450px;
+    width: 800px;
+}
+
+.contact .googleMap {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.contact .address{
+    height: 450px;
+    padding: 11em 20px;
+    border-left: 2px solid var(--green);
+    margin-left: 20px;
+}
+
+.contact .address p {
+    padding-top: 10px;
+}
+
+/*Formulaire*/
+
+.contact form{
+    text-align: center;
+    width:80%;
+    margin: auto;
+}
+
+.contact label {
+    font-weight: bold;
+}
+
+.contact .row {
+    display: flex;
+    gap: 15px;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.row .left, .row .right {
+    width: 50%;
+}
+
+.row input{
+    width: 100%;
+}
+
+.objet input {
+    width: 100%;
+}
+
+.contact input, textarea {
+    margin: 10px 0px;
+}
+
+.contact textarea {
+    width:100%;
+    height: 150px;
+}
+
+.contact input[type="submit"] {
+    color: white;
+    background-color: var(--green);
+    padding: 10px 20px;
+    border: 0;
+}
+
+.contact input:not(input[type="submit"]),textarea {
+    border: 1px solid var(--green);
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+
+        /*Media Queries*/
+
+
+@media (max-width: 992px) {
+    /*Style Global*/
+    .container {
+        width: 100%;
+    }
+
+    /*Page Index*/
+    .index .presentation h2{
+        text-align: center;
+    }
+
+    /*Page Contact*/
+    .contact form {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    /*Style Global*/
+    h1 {
+        display: none;
+    }
+    header li {
+        display: block
+    }
+    header a {
+        width: 100%;
+    }
+    .dropdown {
+        width: 100%;
+    }
+    .dropdown-content {
+        box-shadow: none;
+        position: initial;
+    }
+    .dropdown-content a{
+        text-align: center;
+    }
+    /*Page Index*/
+    .index .presentation .text-presentation {
+        width: 100%;
+        padding: 0;
+    }
+    .index .presentation p {
+        margin-bottom: 0;
+    }
+    .index .presentation .img-presentation {
+        padding-top: 0;
+    }
+    .index .presentation img {
+        display: none;
+        position: fixed;
+    }
+    .index .events .card {
+        width: 100%;
+        display: block;
+    }
+    .story {
+       padding: 20px; 
+    }
+    .index .story .text-story {
+        display: block;
+        width: 100%;
+    }
+    .index .story p {
+        padding-bottom: 0;
+    }
+    .index .story .img-story {
+        padding-top: 0;
+    }
+    .index .story img {
+        display: none;
+        position: fixed;
+    }
+
+    /*Page Boutique*/
+    .boutique .card {
+       width: 400px;
+    }
+    .boutique .card ul {
+        padding-left: 40px;
+    }
+
+    /*Page Contact*/
+    .contact .googleMap {
+        display: block;
+    }
+    .contact iframe {
+        width: 100%;
+    }
+    .contact .address {
+        text-align: center;
+        border: 0;
+        padding: 20px 0;
+        height: unset;
+    }
+    .contact .row {
+        display: block;
+    }
+    .contact .row .left, .row .right {
+        width: 100%;
+    }
+}
